@@ -1,0 +1,485 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* Colores */
+/* negro: #071013 ; rosa: #EB5160 ; violeta: #b7999c ; silver:  #aaaaaa ; platino: #dfe0e2 ;*/
+
+html {
+    font-size: 10px;
+
+}
+/* Clases del header  */
+.navbar {
+    background-color: #ee5757;
+    width: 100%;
+    height: 70px;
+    background-image: url("../Images/estrellas02.jpg");
+    object-fit: cover;
+    background-position:center;
+    background-repeat:repeat;
+    background-size: 50%;
+
+    
+}
+.container-fluid img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.offcanvas-header {
+    background-image: url("../Images/estrellas02.jpg");
+    /* width: 30px;
+    height: 30px; */
+    object-fit: cover;
+}
+.offcanvas-header h5 {
+    font-size: 1.5rem;
+}
+.offcanvas-header img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.container-fluid a {
+    color: #dfe0e2 ;
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 5px;
+    padding: 5px;   
+}
+
+/* Clases del main */
+.cuerpo {
+    background-color: #dfe0e2;
+
+}
+.seccion-primera {
+    background-color: #b7999c;
+
+    margin: 20px;
+    border: 3px solid violet;
+    border-radius: 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+    grid-template-areas: 
+    'area1 area1 area2'
+    'area4 area6 area8'
+    'area5 area7 area9' 
+    'area10 area12 area14' 
+    'area11 area13 area15' 
+    ;
+    /* 'area3 area3 area3' */
+}
+
+.seccion-primera-info {
+    width: 95%;
+    height: 100%;
+    background-color:#EB5160;
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items:center;
+    border: 3px solid salmon;
+    border-radius: 10%;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.seccion-primera-info img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.seccion-primera-info h2 {
+    font-family: 'Ubuntu';
+    width: 90%;
+    font-size: 3.6rem;
+    align-content:flex-start;
+    text-align: center;
+    color: #dfe0e2;
+    padding: 5px;
+}
+
+.seccion-primera-info p {
+    display: flex;
+    flex-direction: column;
+    color: #071013;
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    width: 90%;
+    height: 60%;
+    text-align: justify;
+}
+.seccion-primera-info-plus {
+    text-align: center;
+}
+.seccion-primera-info a {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+
+} 
+.h1 {
+    grid-area: area1;
+    background-color: #b7999c;
+    border: none;
+}
+
+.h2 {
+    grid-area: area2;
+}
+.h2 p {
+    text-align: center;
+}
+.h3 {
+    grid-area: area3;
+}
+
+.h4 {
+    grid-area: area4;
+    background-color: #b7999c;
+    border-radius: 10%;
+    
+}
+
+.h5 {
+    grid-area: area5;
+    
+}
+
+.h5 p {
+    text-align: center;
+}
+.h6 {
+    grid-area: area6;
+    background-color: #b7999c;
+    border-radius: 10%;
+}
+
+.h7 {
+    grid-area: area7;
+}
+.h7 p {
+    text-align: center;
+}
+.h8 {
+    grid-area: area8;
+    background-color: #b7999c;
+    border-radius: 10%;
+}
+
+.h9 {
+    grid-area: area9;
+}
+.h9 p {
+    text-align: center;
+}
+.h10 {
+    grid-area: area10;
+    background-color: #b7999c;
+    border-radius: 10%;
+}
+
+.h11 {
+    grid-area: area11;
+}
+.h11 p {
+    text-align: center;
+}
+.h12 {
+    grid-area: area12;
+    background-color: #b7999c;
+    border-radius: 10%;
+}
+
+.h13 {
+    grid-area: area13;
+}
+.h13 p {
+    text-align: center;
+}
+.h14 {
+    grid-area: area14;
+    background-color: #b7999c;
+    border-radius: 10%;
+}
+
+.h15 {
+    grid-area: area15;
+}
+.h15 p {
+    text-align: center;
+}
+/* Body paginas secundarias */
+.seccion-segunda {
+    background-color: #dfe0e2;
+    min-height: 100vh;
+    max-height: 100%;
+    padding: 20px;
+    display: flex;
+    /* flex-flow: row wrap;
+    justify-content: center; */
+    align-items: center;
+    gap: 10px;
+
+}
+
+.seccion-segunda-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content:center;
+    align-items: center;
+    gap: 10px;
+    background-color: #b7999c;
+    padding: 30px;
+    border: 3px solid #EB5160;
+    border-radius: 10%;
+    /* width: 150%; */
+
+
+}
+.seccion-segunda-info h2 {
+    padding: 10px;
+    color: #dfe0e2;
+    font-family: 'Ubuntu';
+    font-size: 3.6rem;
+    text-align: center;
+    width: 90%;
+}
+
+.seccion-segunda-info p {
+    /* display: flex;
+    flex-direction: row; */
+    color: #071013;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    width: 90%;
+    height: 100%;
+    text-align: justify;
+    padding: 10px;
+}
+.seccion-segunda-info ol li {
+    /* display: flex;
+    flex-direction: row; */
+    color: #071013;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    width: 90%;
+    height: 100%;
+    text-align: justify;
+    /* padding: 10px; */
+}
+.seccion-segunda img {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.seccion-primera-info-plus {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    /* height: 100%; */
+    /* width: 40%; */
+}
+
+.s1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+/* Body pagina responsive tarot */
+
+.container {
+    background-color: #EB5160;
+    border-radius: 4%;
+}
+
+.row img {
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.tarot-primera h2 {
+    padding: 10px;
+    color: #dfe0e2;
+    font-family: 'Ubuntu';
+    font-size: 3.6rem;
+    text-align: center;
+}
+.tarot-primera p {
+    padding: 10px;
+    color: #071013;
+    font-family: 'Roboto';
+    font-size: 2rem;
+}
+
+.accordion-header button {
+    padding: 10px;
+    color: #071013;
+    font-family: 'Roboto';
+    font-size: 2rem;
+}
+
+.accordion-body p {
+    padding: 10px;
+    color: #071013;
+    font-family: 'Roboto';
+    font-size: 2rem;
+}
+
+/* Clases contacto */
+
+.seccion-primera-contacto {
+    display: inline-block;
+    width: 350px;
+    margin: 0px 40px;
+    padding: 10px;
+    text-align: bottom;
+}
+.seccion-primera-contacto label {
+    font-size: 1.6rem;
+    text-align: bottom;
+}
+.titulo-contacto {
+    font-family: 'Ubuntu';
+    font-size: 2.4rem;
+    text-align: center;
+    color: #071013;
+}
+/* .form-input */
+.ingresar-texto {
+    text-align: left;
+}
+.boton-enviar {
+    text-align: right;
+}
+
+
+/* Mediaquery para vista del index en tableta */
+@media (min-width:768px) and (max-width:1023px) {
+    
+    .seccion-primera {
+        background-color: salmon;
+        border-radius: 3%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: 
+        'area1 area2'
+        'area4 area5'
+        'area6 area7' 
+        'area8 area9' 
+        'area10 area11'
+        'area12 area13'
+        'area14 area15' 
+        ;
+    }
+    
+    .h14 , .h12 , .h10, .h8 , .h6 , .h4 , .h1 {
+        background-color: salmon;
+    } 
+    .h15 , .h14 , .h13 , .h12 , .h11 , .h10, .h9 , .h8 , .h7 , .h6 , .h5 , .h4 , .h2 {
+        border: 3px solid violet;
+    } 
+    .container-fluid a {
+        font-size: 1.8rem;
+    }
+}
+/* Mediaquery para vista del index en mobile */
+@media (max-width:768px) {
+    .seccion-primera {
+        background-color: #EB5160;
+        border-radius: 0%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        grid-template-areas: 
+        'area1'
+        'area2'
+        'area4' 
+        'area5'
+        'area6'
+        'area7'
+        'area8'
+        'area9' 
+        'area10'
+        'area11'
+        'area12'
+        'area13'
+        'area14'
+        'area15' 
+        ;
+
+    }
+    
+    .h14 , .h12 , .h10, .h8 , .h6 , .h4 , .h1 {
+        background-color: #EB5160;
+    } 
+    .h15 , .h14 , .h13 , .h12 , .h11 , .h10, .h9 , .h8 , .h7 , .h6 , .h5 , .h4 , .h2 {
+        border: 3px solid #b7999c;
+    } 
+    .container-fluid a {
+        font-size: 2.1rem;
+    }
+}
+
+
+/* Clases del footer */
+.pie-fondo {
+    background-image: url("../Images/estrellas01.jpg");
+    background-position:left;
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+.pie-frase {
+
+    color:#b7999c;
+    font-family: 'Ubuntu';
+    text-align: center;   
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding: 20px;
+
+}
+.pie-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: end;
+    text-align: center;
+    color: silver;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 20px;
+    gap: 10px;
+    
+}
+.pie-info ul {
+    list-style-type: none;
+}
+.pie-info ul li a {
+    color:#dfe0e2;
+}

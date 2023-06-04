@@ -13,7 +13,7 @@ html {
 .barra-navegacion {
     width: 100%;
     height: 70px;
-    background-image: url("../Images/estrellas02.jpg");
+    background-image: url("../images/estrellas02.jpg");
     object-fit: cover;
     background-position:center;
     background-repeat:repeat;
@@ -37,7 +37,7 @@ html {
 }
 
 .cabecera-lateral {
-    background-image: url("../Images/estrellas02.jpg");
+    background-image: url("../images/estrellas02.jpg");
     object-fit: cover;
     background-position:center;
     background-repeat:repeat;
@@ -450,7 +450,7 @@ html {
 
 /* Clases del footer */
 .pie-fondo {
-    background-image: url("../Images/estrellas01.jpg");
+    background-image: url("../images/estrellas01.jpg");
     background-position:left;
     background-repeat: repeat;
     background-size: cover;

@@ -1,488 +1,534 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 /* Colores */
 /* negro: #071013 ; rosa: #EB5160 ; violeta: #b7999c ; silver:  #aaaaaa ; platino: #dfe0e2 ;*/
-
 html {
-    font-size: 10px;
-}
+  font-size: 10px;
+} /* Clases del header  */
 /* Clases del header  */
 .barra-navegacion {
-    width: 100%;
-    height: 70px;
-    background-image: url("../images/estrellas02.jpg");
-    object-fit: cover;
-    background-position:center;
-    background-repeat:repeat;
-    background-size: 50%;
+  width: 100%;
+  height: 70px;
+  background-image: url("../images/estrellas02.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 50%;
 }
 
 .barra-navegacion-contenido img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .barra-navegacion-contenido a {
-    color: #dfe0e2 ;
-    font-family: 'Ubuntu';
-    text-align: center;
-    font-size: 2.4rem;
-    margin: 5px;
-    padding: 5px;   
+  color: #dfe0e2;
+  font-family: "Ubuntu";
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 5px;
+  padding: 5px;
 }
 
 .cabecera-lateral {
-    background-image: url("../images/estrellas02.jpg");
-    object-fit: cover;
-    background-position:center;
-    background-repeat:repeat;
-    background-size: 50%;
+  background-image: url("../images/estrellas02.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 50%;
 }
 
 .cabecera-lateral h1 {
-    font-size: 1.5rem;
-    color: #dfe0e2;
+  font-size: 1.5rem;
+  color: #dfe0e2;
 }
 
 .cabecera-lateral img {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-}
-
-/* Clases del main */
-.cuerpo {
-    background-color: #dfe0e2;
-}
-
-.seccion-primera {
-    background-color: #b7999c;
-    margin: 10px;
-    border: 3px solid violet;
-    border-radius: 4%;
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    padding: 10px;
-    grid-template-areas: 
-    'area1 area1 area2'
-    'area4 area6 area8'
-    'area5 area7 area9' 
-    ;
-}
-
-.seccion-primera-info {
-    width: 95%;
-    height: 100%;
-    background-color:#EB5160;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    border: 3px solid salmon;
-    border-radius: 10%;
-    margin: 10px;
-    padding: 10px;
-}
-
-.seccion-primera-info img {
-    height: 90%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10%;
-}
-
-.seccion-primera-info h2 {
-    font-family: 'Ubuntu';
-    width: 90%;
-    font-size: 3.6rem;
-    align-content:flex-start;
-    text-align: center;
-    color: #dfe0e2;
-    padding: 5px;
-}
-
-.seccion-primera-info p {
-    display: flex;
-    flex-direction: column;
-    color: #071013;
-    font-family: 'Roboto';
-    font-size: 2.4rem;
-    width: 90%;
-    height: 60%;
-    text-align: justify;
-}
-
-.seccion-primera-info a {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-size: 2.4rem;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-} 
-.info-1 {
-    grid-area: area1;
-    background-color: #b7999c;
-    border: none;
-}
-
-.info-2 {
-    grid-area: area2;
-}
-
-.info-2 img {
-    align-items: center;
-}
-.info-3 {
-    grid-area: area3;
-}
-
-.info-4 {
-    grid-area: area4;
-    background-color: #b7999c;
-    border-radius: 10%;
-    
-}
-
-.info-5 {
-    grid-area: area5;
-    
-}
-
-.info-5 p {
-    text-align: center;
-}
-.info-6 {
-    grid-area: area6;
-    background-color: #b7999c;
-    border-radius: 10%;
-}
-
-.info-7 {
-    grid-area: area7;
-}
-.info-7 p {
-    text-align: center;
-}
-.info-8 {
-    grid-area: area8;
-    background-color: #b7999c;
-    border-radius: 10%;
-}
-
-.info-9 {
-    grid-area: area9;
-}
-.info-9 p {
-    text-align: center;
-}
-
-/* Body paginas secundarias */
-.seccion-segunda {
-    background-color: #dfe0e2;
-    min-height: 100vh;
-    max-height: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-
-}
-
-.seccion-segunda-info {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    align-content:center;
-    align-items: center;
-    gap: 10px;
-    background-color: #b7999c;
-    padding: 30px;
-    border: 3px solid #EB5160;
-    border-radius: 10%;
-}
-
-.seccion-segunda-info h2 {
-    padding: 10px;
-    color: #dfe0e2;
-    font-family: 'Ubuntu';
-    font-size: 3.6rem;
-    text-align: center;
-    width: 90%;
-}
-
-.seccion-segunda-info p {
-    color: #071013;
-    font-family: 'Roboto';
-    font-size: 2rem;
-    width: 90%;
-    height: 100%;
-    text-align: justify;
-    padding: 10px;
-}
-
-.seccion-segunda-info ol li {
-    color: #071013;
-    font-family: 'Roboto';
-    font-size: 2rem;
-    width: 90%;
-    height: 100%;
-    text-align: justify;
-}
-
-.seccion-segunda-info a {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-size: 2.4rem;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-}
-
-.seccion-segunda img {
-    width: 90%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10%;
-}
-
-/* Body pagina responsive tarot */
-
-.contenedor {
-    background-color: #EB5160;
-    border-radius: 4%;
-}
-
-.tarot-segunda img {
-    border-radius: 10%;
-    padding: 10px;
-}
-
-.tarot-primera h2 {
-    padding: 10px;
-    color: #dfe0e2;
-    font-family: 'Ubuntu';
-    font-size: 3.6rem;
-    text-align: center;
-}
-.tarot-primera p {
-    padding: 10px;
-    color: #071013;
-    font-family: 'Roboto';
-    font-size: 2rem;
-}
-
-.cabecera-acordeon button {
-    padding: 10px;
-    color: #071013;
-    font-family: 'Roboto';
-    font-size: 2.4rem;
-}
-
-.cuerpo-acordeon p {
-    padding: 10px;
-    color: #071013;
-    font-family: 'Roboto';
-    font-size: 1.8rem;
-}
-
-.tarot-primera a {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-size: 2.4rem;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-}
-/* Clases contacto */
-
-.seccion-primera-contacto {
-    display: inline-block;
-    width: 350px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
-.seccion-primera-contacto p {
-    color: #071013;
-    font-family: 'Roboto';
-    font-size: 1.6rem;
-    width: 270px;
-    margin: 5px;
-    padding: 5px;
-    text-align: justify;
-}
-
-.seccion-primera-contacto label {
-    font-size: 1.6rem;
-    text-align: justify;
-    color: #071013;
-    font-family: 'Roboto';
-    margin: 0.5rem;
-}
-
-.titulo-contacto {
-    font-family: 'Ubuntu';
-    font-size: 2.4rem;
-    text-align: center;
-    color: #071013;
-}
-
-.ingresar-texto label {
-    text-align: left;
-}
-
-.boton-enviar {
-    margin-left: 17.5rem;
-}
-
-/* Mediaquery para vista del index en tableta */
-@media (min-width:768px) and (max-width:1023px) {
-    .barra-navegacion {
-        height: 60px;
-    }
-
-    .barra-navegacion-contenido img {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .barra-navegacion-contenido a {
-        font-size: 1.8rem;
-    }
-    
-    .seccion-primera-info h2 {
-        font-size: 3.0rem;
-    }
-    
-    .seccion-primera-info p {
-        font-size: 2.0rem;
-    }
-    .seccion-primera {
-        background-color: salmon;
-        border-radius: 3%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        'area1 area2'
-        'area4 area5'
-        'area6 area7' 
-        'area8 area9' 
-        ;
-    }
-    
-    .info-1 , .info-4 , .info-6 , .info-8 {
-        background-color: salmon;
-    } 
-    .info-2 , .info-4 , .info-5 , .info-6 , .info-7 , .info-8 , .info-9 {
-        border: 3px solid violet;
-    } 
-
-}
-/* Mediaquery para vista del index en mobile */
-@media (max-width:768px) {
-    .barra-navegacion {
-        height: 50px;
-    }
-
-    .barra-navegacion-contenido img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .barra-navegacion-contenido a {
-        font-size: 1.3rem;
-    }
-
-    .seccion-primera-info h2 {
-        font-size: 2.4rem;
-    }
-    
-    .seccion-primera-info p {
-        font-size: 1.8rem;
-    }
-
-    .seccion-primera {
-        background-color: #EB5160;
-        border-radius: 0%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: 
-        'area1'
-        'area2'
-        'area4' 
-        'area5'
-        'area6'
-        'area7'
-        'area8'
-        'area9' 
-        ;
-    }
-    
-    .info-1 , .info-4 , .info-6 , .info-8 {
-        background-color: #EB5160;
-    } 
-    .info-2 , .info-4 , .info-5 , .info-6 , .info-7 , .info-8 , .info-9 {
-        border: 3px solid #b7999c;
-    } 
-
-}
-/* Mediaqueries para responsive reiki y meditación */
-@media (max-width:810px) {
-    .seccion-segunda-info {
-        flex-flow: row wrap;
-    }
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
 }
 
 /* Clases del footer */
 .pie-fondo {
-    background-image: url("../images/estrellas01.jpg");
-    background-position:left;
-    background-repeat: repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+  background-image: url("../images/estrellas01.jpg");
+  background-position: left;
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
+
 .pie-frase {
-
-    color:#b7999c;
-    font-family: 'Ubuntu';
-    text-align: center;   
-    font-size: 3.2rem;
-    font-weight: bold;
-    padding: 20px;
-
+  color: #b7999c;
+  font-family: "Ubuntu";
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding: 20px;
 }
+
 .pie-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: end;
-    text-align: center;
-    color: silver;
-    font-size: 2.4rem;
-    font-weight: bold;
-    padding: 20px;
-    gap: 10px;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: end;
+  text-align: center;
+  color: silver;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 20px;
+  gap: 10px;
 }
+
 .pie-info ul {
-    list-style-type: none;
+  list-style-type: none;
 }
+
 .pie-info ul li a {
-    color:#dfe0e2;
+  color: #dfe0e2;
 }
+
+/* Clases del main */
+/* Clases del main */
+.cuerpo {
+  background-color: #dfe0e2;
+}
+
+.seccion-primera {
+  background-color: #b7999c;
+  margin: 10px;
+  border: 3px solid violet;
+  border-radius: 4%;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  grid-template-areas: "area1 area1 area2" "area4 area6 area8" "area5 area7 area9";
+}
+
+.seccion-primera-info {
+  width: 95%;
+  height: 100%;
+  background-color: #EB5160;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid salmon;
+  border-radius: 10%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.seccion-primera-info img {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.seccion-primera-info h2 {
+  font-family: "Ubuntu";
+  width: 90%;
+  font-size: 3.6rem;
+  align-content: flex-start;
+  text-align: center;
+  color: #dfe0e2;
+  padding: 5px;
+}
+
+.seccion-primera-info p {
+  display: flex;
+  flex-direction: column;
+  color: #071013;
+  font-family: "Roboto";
+  font-size: 2.4rem;
+  width: 90%;
+  height: 60%;
+  text-align: justify;
+}
+
+.seccion-primera-info a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2.4rem;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.info-1 {
+  grid-area: area1;
+  background-color: #b7999c;
+  border: none;
+}
+
+.info-2 {
+  grid-area: area2;
+}
+
+.info-2 img {
+  align-items: center;
+}
+
+.info-3 {
+  grid-area: area3;
+}
+
+.info-4 {
+  grid-area: area4;
+  background-color: #b7999c;
+  border-radius: 10%;
+}
+
+.info-5 {
+  grid-area: area5;
+}
+
+.info-5 p {
+  text-align: center;
+}
+
+.info-6 {
+  grid-area: area6;
+  background-color: #b7999c;
+  border-radius: 10%;
+}
+
+.info-7 {
+  grid-area: area7;
+}
+
+.info-7 p {
+  text-align: center;
+}
+
+.info-8 {
+  grid-area: area8;
+  background-color: #b7999c;
+  border-radius: 10%;
+}
+
+.info-9 {
+  grid-area: area9;
+}
+
+.info-9 p {
+  text-align: center;
+}
+
+/* Body paginas secundarias */
+/* Body paginas secundarias */
+.seccion-segunda {
+  background-color: #dfe0e2;
+  min-height: 100vh;
+  max-height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.seccion-segunda-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #b7999c;
+  padding: 30px;
+  border: 3px solid #EB5160;
+  border-radius: 10%;
+}
+
+.seccion-segunda-info h2 {
+  padding: 10px;
+  color: #dfe0e2;
+  font-family: "Ubuntu";
+  font-size: 3.6rem;
+  text-align: center;
+  width: 90%;
+}
+
+.seccion-segunda-info p {
+  color: #071013;
+  font-family: "Roboto";
+  font-size: 2rem;
+  width: 90%;
+  height: 100%;
+  text-align: justify;
+  padding: 10px;
+}
+
+.seccion-segunda-info ol li {
+  color: #071013;
+  font-family: "Roboto";
+  font-size: 2rem;
+  width: 90%;
+  height: 100%;
+  text-align: justify;
+}
+
+.seccion-segunda-info a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2.4rem;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.seccion-segunda img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Body pagina responsive tarot */
+/* Body pagina responsive tarot */
+.contenedor {
+  background-color: #EB5160;
+  border-radius: 4%;
+}
+
+.tarot-segunda img {
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.tarot-primera h2 {
+  padding: 10px;
+  color: #dfe0e2;
+  font-family: "Ubuntu";
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.tarot-primera p {
+  padding: 10px;
+  color: #071013;
+  font-family: "Roboto";
+  font-size: 2rem;
+}
+
+.cabecera-acordeon button {
+  padding: 10px;
+  color: #071013;
+  font-family: "Roboto";
+  font-size: 2.4rem;
+}
+
+.cuerpo-acordeon p {
+  padding: 10px;
+  color: #071013;
+  font-family: "Roboto";
+  font-size: 1.8rem;
+}
+
+.tarot-primera a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2.4rem;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Body paginas secundarias */
+/* Body paginas secundarias */
+.seccion-segunda {
+  background-color: #dfe0e2;
+  min-height: 100vh;
+  max-height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.seccion-segunda-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #b7999c;
+  padding: 30px;
+  border: 3px solid #EB5160;
+  border-radius: 10%;
+}
+
+.seccion-segunda-info h2 {
+  padding: 10px;
+  color: #dfe0e2;
+  font-family: "Ubuntu";
+  font-size: 3.6rem;
+  text-align: center;
+  width: 90%;
+}
+
+.seccion-segunda-info p {
+  color: #071013;
+  font-family: "Roboto";
+  font-size: 2rem;
+  width: 90%;
+  height: 100%;
+  text-align: justify;
+  padding: 10px;
+}
+
+.seccion-segunda-info ol li {
+  color: #071013;
+  font-family: "Roboto";
+  font-size: 2rem;
+  width: 90%;
+  height: 100%;
+  text-align: justify;
+}
+
+.seccion-segunda-info a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2.4rem;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.seccion-segunda img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Clases contacto */
+.seccion-primera-contacto {
+  display: inline-block;
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.seccion-primera-contacto p {
+  color: #071013;
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  width: 270px;
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+}
+
+.seccion-primera-contacto label {
+  font-size: 1.6rem;
+  text-align: justify;
+  color: #071013;
+  font-family: "Roboto";
+  margin: 0.5rem;
+}
+
+.titulo-contacto {
+  font-family: "Ubuntu";
+  font-size: 2.4rem;
+  text-align: center;
+  color: #071013;
+}
+
+.ingresar-texto label {
+  text-align: left;
+}
+
+.boton-enviar {
+  margin-left: 17.5rem;
+}
+
+/* Mediaquery para vista del index en tableta */
+/* Mediaquery para vista del index en tableta */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .barra-navegacion {
+    height: 60px;
+  }
+  .barra-navegacion-contenido img {
+    width: 40px;
+    height: 40px;
+  }
+  .barra-navegacion-contenido a {
+    font-size: 1.8rem;
+  }
+  .seccion-primera-info h2 {
+    font-size: 3rem;
+  }
+  .seccion-primera-info p {
+    font-size: 2rem;
+  }
+  .seccion-primera {
+    background-color: salmon;
+    border-radius: 3%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "area1 area2" "area4 area5" "area6 area7" "area8 area9";
+  }
+  .info-1, .info-4, .info-6, .info-8 {
+    background-color: salmon;
+  }
+  .info-2, .info-4, .info-5, .info-6, .info-7, .info-8, .info-9 {
+    border: 3px solid violet;
+  }
+}
+/* Mediaquery para vista del index en mobile */
+@media (max-width: 768px) {
+  .barra-navegacion {
+    height: 50px;
+  }
+  .barra-navegacion-contenido img {
+    width: 30px;
+    height: 30px;
+  }
+  .barra-navegacion-contenido a {
+    font-size: 1.3rem;
+  }
+  .seccion-primera-info h2 {
+    font-size: 2.4rem;
+  }
+  .seccion-primera-info p {
+    font-size: 1.8rem;
+  }
+  .seccion-primera {
+    background-color: #EB5160;
+    border-radius: 0%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "area1" "area2" "area4" "area5" "area6" "area7" "area8" "area9";
+  }
+  .info-1, .info-4, .info-6, .info-8 {
+    background-color: #EB5160;
+  }
+  .info-2, .info-4, .info-5, .info-6, .info-7, .info-8, .info-9 {
+    border: 3px solid #b7999c;
+  }
+}
+/* Mediaqueries para responsive reiki y meditación */
+@media (max-width: 810px) {
+  .seccion-segunda-info {
+    flex-flow: row wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

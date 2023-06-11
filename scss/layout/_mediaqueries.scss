@@ -1,0 +1,100 @@
+
+/* Mediaquery para vista del index en tableta */
+@media (min-width:768px) and (max-width:1023px) {
+    .barra-navegacion {
+        height: 60px;
+    }
+
+    .barra-navegacion-contenido img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .barra-navegacion-contenido a {
+        font-size: 1.8rem;
+    }
+    
+    .seccion-primera-info h2 {
+        font-size: 3.0rem;
+    }
+    
+    .seccion-primera-info p {
+        font-size: 2.0rem;
+    }
+    .seccion-primera {
+        background-color: salmon;
+        border-radius: 3%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        'area1 area2'
+        'area4 area5'
+        'area6 area7' 
+        'area8 area9' 
+        ;
+    }
+    
+    .info-1 , .info-4 , .info-6 , .info-8 {
+        background-color: salmon;
+    } 
+    .info-2 , .info-4 , .info-5 , .info-6 , .info-7 , .info-8 , .info-9 {
+        border: 3px solid violet;
+    } 
+
+}
+/* Mediaquery para vista del index en mobile */
+@media (max-width:768px) {
+    .barra-navegacion {
+        height: 50px;
+    }
+
+    .barra-navegacion-contenido img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .barra-navegacion-contenido a {
+        font-size: 1.3rem;
+    }
+
+    .seccion-primera-info h2 {
+        font-size: 2.4rem;
+    }
+    
+    .seccion-primera-info p {
+        font-size: 1.8rem;
+    }
+
+    .seccion-primera {
+        background-color: #EB5160;
+        border-radius: 0%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        'area1'
+        'area2'
+        'area4' 
+        'area5'
+        'area6'
+        'area7'
+        'area8'
+        'area9' 
+        ;
+    }
+    
+    .info-1 , .info-4 , .info-6 , .info-8 {
+        background-color: #EB5160;
+    } 
+    .info-2 , .info-4 , .info-5 , .info-6 , .info-7 , .info-8 , .info-9 {
+        border: 3px solid #b7999c;
+    } 
+
+}
+/* Mediaqueries para responsive reiki y meditación */
+@media (max-width:810px) {
+    .seccion-segunda-info {
+        flex-flow: row wrap;
+    }
+}

@@ -1,0 +1,30 @@
+
+
+// Imports base
+@import 'base/resets';
+@import 'base/utilidades';
+@import 'base/variables';
+
+// Imports components
+
+/* Clases del header  */
+@import 'components/navbar';
+/* Clases del footer */
+@import 'components/footer';
+
+// Imports layout
+
+/* Clases del main */
+@import 'layout/index';
+/* Body paginas secundarias */
+@import 'layout/reiki';
+/* Body pagina responsive tarot */
+@import 'layout/tarot';
+/* Body paginas secundarias */
+@import 'layout/meditacion';
+/* Clases contacto */
+@import 'layout/contacto';
+/* Mediaquery para vista del index en tableta */
+@import 'layout/mediaqueries';
+
+

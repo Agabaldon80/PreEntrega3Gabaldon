@@ -1,0 +1,50 @@
+/* Body pagina responsive tarot */
+
+.contenedor {
+    background-color: #EB5160;
+    border-radius: 4%;
+}
+
+.tarot-segunda img {
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.tarot-primera h2 {
+    padding: 10px;
+    color: #dfe0e2;
+    font-family: 'Ubuntu';
+    font-size: 3.6rem;
+    text-align: center;
+}
+.tarot-primera p {
+    padding: 10px;
+    color: #071013;
+    font-family: 'Roboto';
+    font-size: 2rem;
+}
+
+.cabecera-acordeon button {
+    padding: 10px;
+    color: #071013;
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+}
+
+.cuerpo-acordeon p {
+    padding: 10px;
+    color: #071013;
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+}
+
+.tarot-primera a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2.4rem;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
